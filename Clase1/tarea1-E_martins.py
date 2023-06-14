@@ -166,7 +166,9 @@ print(f"Valor antiguo 6: {valor6}, Tipo antiguo: {type(valor6)}, Valor actualiza
 print('----------------------------------------')
 
 """
-
+"""
+Ejercicios
+""" 
 
                   
                   
