@@ -37,8 +37,8 @@ else:
 """ 
 #Ejercicio 5
 """
-nombre = input("ingrese su nombre: ")
-sexo = input("ingrese su sexo: ")
+nombre = input("ingrese su nombre: ").lower()
+sexo = input("ingrese su sexo: ").lower()
 
 if (nombre < 'h' and sexo == 'mujer') or (nombre > 'm' and sexo == 'hombre'):
     print('perteneces al grupo A')

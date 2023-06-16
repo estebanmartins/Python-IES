@@ -85,8 +85,9 @@ peso_muniecas = valor2 * (120/1000)
 peso_total = peso_payasos + peso_muniecas
 print(f"El peso total del pedido es : {peso_total} kg")
 """
+
 #Ejercicio 11
-"""
+""" 
 # Coeficientes de la ecuación cuadrática
 a = 2
 b = 3
@@ -101,10 +102,10 @@ raiz_2 = (-b - (discriminante ** 0.5)) / (2*a)
 
 # Impresión de las raíces
 print("Las raíces son:", raiz_1, "y", raiz_2)
-""" 
+"""
 #Ejercicio 12
 
-""" 
+"""
 # Coeficientes de la ecuación cuadrática
 a = 2
 b = 3
@@ -122,21 +123,21 @@ ecuacion_1 = a*(raiz_1**2) + b*raiz_1 + c
 ecuacion_2 = a*(raiz_2**2) + b*raiz_2 + c
 
 # Impresión de los resultados
-print("Ecuación 1:", ecuacion_1)
-print("Ecuación 2:", ecuacion_2)
+print(f"Ecuación 1: { ecuacion_1}")
+print(f"Ecuación 2:{ecuacion_2}" )
 #Son igual a 0
 """ 
 #Ejercicio 13
-"""
+""" 
 entero =200
 flotante =200.10
 booleano =True
 print(f"Tipo : {type(entero)}, ID : {id(entero)}, Valor : {entero}")
 print(f"Tipo : {type(flotante)}, ID : {id(flotante)}, Valor : {flotante}")
 print(f"Tipo : {type(booleano)}, ID : {id(booleano)}, Valor : {booleano}")
-""" 
+"""
 #Ejercicio 14
-""" 
+"""
 #Variables dadas    #a convertir en
 valor1 = 4.2        #int
 valor2 = 4.2        #bool
@@ -165,7 +166,7 @@ print('----------------------------------------')
 print(f"Valor antiguo 6: {valor6}, Tipo antiguo: {type(valor6)}, Valor actualizado {nuevo_valor6}, Tipo actualizado {type(nuevo_valor6)}")
 print('----------------------------------------')
 
-"""
+""" 
 """
 Ejercicios
 """ 

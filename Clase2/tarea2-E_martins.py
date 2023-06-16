@@ -1,10 +1,10 @@
 #Ejercicio 1
-"""
+""" 
 nombre = input('Ingrese su nombre: ')
 repetir = int(input('Ingrese la cantidad de veces que desea repetir el nombre: '))
 resultado = (nombre + '\n') * repetir
 print(f"El resultado  es:\n{resultado}", end="")
-""" 
+"""
 #Ejercicio 2
 """
 nombre = input("Ingrese nombre: ")
@@ -63,7 +63,7 @@ salida = int(operacion1) + int(operacion2) + int(operacion3)
 print(f"{salida} ({operacion1} + {operacion2} + {operacion3})")
 """
 #Ejercicio 7
-""" 
+"""
 fecha = input("Ingrese su fecha de nacimiento (dd/mm/aaaa): ").replace('/',  ',')
 fecha_dividida = fecha.split(",")
 dia = fecha_dividida[0]
@@ -74,22 +74,22 @@ dia = int(dia)
 mes = int(mes)
 anio = int(anio)
 
-print("Día:", dia)
-print("Mes:", mes)
-print("Año:", anio)
+print(f"Día: {dia}", )
+print(f"Mes:{mes} ", )
+print(f"Año: {anio}", )
 """ 
 #Ejercicio 8
-"""
 
+""" 
 nombre_producto = input("Ingrese Nombre de Producto: ")
 precio_producto = int(input("Ingrese precio del Producto: "))
 num_unidades = int(input("Ingrese numero de unidades: "))   
 
-precio_producto = float(num_unidades,4)
-print(f"El nombre del producto es {nombre_producto}, el precio es : {precio_producto}, el num de unidades es : {num_unidades}")
-""" 
+# precio_producto = float(num_unidades,4)
+print(f"El nombre del producto es {nombre_producto}, el precio es : {precio_producto:.4g}, el num de unidades es : {num_unidades}")
+"""
 #Ejercicio 9
-""" 
+"""
 productos = input("Ingrese 3 productos y su cantidad: ") #6:huevos, 1:azúcar, 4:latas de pescado
 lista_productos = productos.split(",")
 
@@ -99,13 +99,13 @@ producto3 = lista_productos[2]
 print(producto1.replace(":", " "))
 print(producto2.replace(":", " "))
 print(producto3.replace(":", " "))
-"""
+
+""" 
 
 #Ejercicio 10
-"""
+
 palabra = input("Ingrese una palabra en castellano: ")
 vocales = palabra.count('a') + palabra.count('e') + palabra.count('i') + palabra.count('o')+ palabra.count('u') 
 operacion = len(palabra) * vocales
 print(operacion)
 
-""" 
