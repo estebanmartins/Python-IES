@@ -1,0 +1,204 @@
+#Ejercicio 1   
+""" 
+valor = int(input('Ingrese un valor: '))
+
+for num in range(valor):
+    contador = num * 5
+    if contador > valor:
+        break
+    print(contador)
+""" 
+
+#Ejercicio 2
+
+""" 
+numero = int(input("Ingrese un número: "))
+
+if numero < 2:
+    print("No es primo")
+else:
+    es_primo = True  
+    for divisor in range(2, numero):
+        if numero % divisor == 0:
+            es_primo = False         
+            break            
+    if es_primo or numero == 2:
+        print("Es primo")
+    else:
+        print("No es primo")
+""" 
+
+""" 
+Si en la iteración  se encuentra un divisor que divide al número sin dejar residuo, significa que el número no es primo y se pone la var es_primo en false para luego ser usada en el if
+""" 
+
+
+
+#Ejercicio 3
+
+""" 
+valor = int(input('Ingrese un valor: '))
+suma = 0
+
+for num in range(valor):
+    contador = num * 3
+    suma += contador
+
+    if suma > valor:
+        break
+
+    print(contador)
+""" 
+"""
+En este código, se ha agregado la variable suma_multiplos para realizar el seguimiento de la suma acumulativa de los múltiplos de 3. En cada iteración del bucle, se agrega el contador a la suma_multiplos. Luego, se verifica si la suma_multiplos es mayor que el valor ingresado. Si es así, se rompe el bucle utilizando la instrucción break. Esto detendrá el bucle cuando la suma de los múltiplos sea mayor que el valor ingresado.
+"""
+
+
+#Ejercicio 4
+""" 
+for i in range(1, 10):
+    multiplicando = int("1" * i)
+    resultado = multiplicando * multiplicando
+    print(f"{multiplicando} * {multiplicando} = {resultado}")
+
+En este programa, se utiliza un bucle for para iterar desde 1 hasta 9. En cada iteración, se construye el multiplicando utilizando el operador de repetición de cadenas "1" * i, donde i representa el número de repeticiones. Luego, se realiza la multiplicación del multiplicando consigo mismo y se almacena el resultado en la variable resultado. Finalmente, se imprime el resultado utilizando un f-string.
+
+""" 
+
+
+#Ejercicio 5
+"""
+str1 = "abc"
+str2 = "123"
+
+for letra in str1:
+    for num in str2:
+        print(letra + num)        #usando for anidado para iterar las dos cadenas
+
+""" 
+
+
+
+#Ejercicio 6
+""" 
+x = 1  # Coordenada x inicial del caballo
+y = 1  # Coordenada y inicial del caballo
+
+print(f"({x}, {y})", end=" ")  # Imprimir la posición inicial del caballo
+
+while True:  # Bucle infinito para simular el movimiento del caballo
+
+    # Moverse 2 posiciones en x y 1 posición en y
+    x += 2
+    y += 1
+
+    # Verificar si se salió del tablero
+    if x > 8 or y > 8:
+        break  # Romper el bucle si se salió del tablero
+
+    print(f"({x}, {y})", end=" ")  # Imprimir la posición actual del caballo
+
+    # Moverse 1 posición en x y 2 posiciones en y
+    x += 1
+    y += 2
+
+    # Verificar si se salió del tablero
+    if x > 8 or y > 8:
+        break  # Romper el bucle si se salió del tablero
+
+    print(f"({x}, {y})", end=" ")  # Imprimir la posición actual del caballo
+
+"""
+
+
+
+#Ejercicio 7
+""" 
+cadena1 = input("Ingrese la primera cadena de texto: ")   #0001010011101  
+cadena2 = input("Ingrese la segunda cadena de texto: ")   #0000110010001
+
+distancia = 0
+
+for i in range(len(cadena1)):
+    if cadena1[i] != cadena2[i]:                         #va iterando y si i es diferente a la i de la otra cadena le suma 1 a distancia
+        distancia += 1
+
+print(f"La distancia Hamming entre las cadenas es: {distancia}")
+""" 
+#Ejercicio 8
+"""
+a = int(input("Ingrese el primer número: "))
+b = int(input("Ingrese el segundo número: "))
+
+# Encuentra el número más pequeño entre a y b
+min_num = min(a, b)
+
+# Inicializa el máximo común divisor
+mcd = 1
+
+# Itera desde 2 hasta el número más pequeño
+for i in range(2, min_num + 1):
+
+    # Verifica si i es un divisor común de a y b
+    if a % i == 0 and b % i == 0:
+        mcd = i
+
+print("El máximo común divisor entre", a, "y", b, "es:", mcd)
+
+""" 
+
+#Ejercicio 9
+""" 
+valor_x = -9  # Valor inicial de x para el mínimo
+valor_f = float('inf')  # Valor inicial del resultado mínimo de f(x)
+
+for x in range(-9, 10):  # Iterar sobre el rango [-9, 9]
+
+    # Calcular el resultado de f(x)
+    resultado = x**2 - 6*x + 3
+
+    # Verificar si el resultado es menor al mínimo actual
+    if resultado < valor_f:
+        valor_x = x  # Actualizar el valor de x para el mínimo
+        valor_f = resultado  # Actualizar el resultado mínimo de f(x)
+
+print("El resultado es: x =", valor_x, "y f(x) =", valor_f)
+
+"""
+
+#Ejercicio 10
+""" 
+contador = 0
+
+for num in range(33, 128):
+    letra = chr(num)                       #chr representa la variable(num) segun su codigo ascii
+    print(f"{num} {letra}", end="       ") #el end indica que al terminar agregue un espacio en lugar de un \n x default
+    contador += 1
+    
+    if contador == 5:
+        print("\n")                  # Salto de línea
+        contador = 0
+
+"""
+#Ejercicio 11
+
+
+#Ejercicio 12
+"""   
+numero = 87
+intentos = 0
+while True:
+    
+    valor = int(input('Adivine el numero del 1 al 100, ingrese un número: '))
+    intentos += 1
+    if valor < numero:
+        print(f'No has acertado, el número es más alto que {valor}')
+    elif valor > numero:
+        print(f'No has acertado, el número es más bajo que {valor}')
+    else:
+        print(f'¡Has acertado! El número es {valor}')
+        break
+
+
+print(f'Número de intentos: {intentos}') 
+""" 
